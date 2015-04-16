@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="newTimeline" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="698.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.newTimeLine">
+   <children>
+      <MenuBar prefHeight="25.0" prefWidth="593.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Save" />
+                  <MenuItem mnemonicParsing="false" text="Load" />
+                  <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Pane fx:id="menu" layoutX="-39.0" onMousePressed="#showEvent" prefHeight="480.0" prefWidth="698.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-39.0" AnchorPane.rightAnchor="39.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="addTimed" layoutX="444.0" layoutY="441.0" mnemonicParsing="false" onAction="#addEvent" text="Add timed event" visible="false" />
+            <Button fx:id="addNoTime" layoutX="593.0" layoutY="441.0" mnemonicParsing="false" text="Add non" visible="false" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

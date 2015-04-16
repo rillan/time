@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="fullAnchor" prefHeight="269.0" prefWidth="438.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Test">
+   <children>
+      <SplitPane dividerPositions="0.12121212121212122" layoutY="-70.0" orientation="VERTICAL" prefHeight="201.0" prefWidth="186.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <MenuButton layoutX="-4.0" layoutY="29.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="95.0" scaleShape="false" text="File" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="341.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <MenuItem fx:id="newTimebtn" mnemonicParsing="false" onAction="#newTimeLine" text="New Timeline" />
+                      <MenuItem fx:id="openTimebtn" mnemonicParsing="false" onAction="#handleButtonAction" text="Open timeline" />
+                    </items>
+                  </MenuButton>
+               </children>
+            </AnchorPane>
+          <AnchorPane fx:id="below" minHeight="0.0" minWidth="0.0" prefHeight="222.0" prefWidth="436.0">
+               <children>
+                  <DatePicker fx:id="startDate" layoutX="148.0" layoutY="117.0" onAction="#setStartdate" prefHeight="25.0" prefWidth="44.0" visible="false" />
+                  <DatePicker fx:id="endDate" layoutX="323.0" layoutY="117.0" onAction="#setEnddate" prefHeight="25.0" prefWidth="6.0" visible="false" />
+                  <Button fx:id="ok" layoutX="83.0" layoutY="166.0" mnemonicParsing="false" onAction="#createTimeLine" prefHeight="29.0" prefWidth="83.0" text="Ok" visible="false" />
+                  <Button fx:id="cancel" layoutX="190.0" layoutY="168.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="83.0" text="Cancel" visible="false" />
+                  <TextField fx:id="txtfield" layoutX="124.0" layoutY="14.0" promptText="Enter name" text="Enter name" visible="false" />
+                  <Label fx:id="timeLabel" layoutX="125.0" layoutY="201.0" text="Timelines can spawn for 1 year." visible="false" />
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
